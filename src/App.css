@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+body{
+    font-family: "Roboto" !important; 
+   background-color: #ebf7ff;
+   padding: 0;
+   margin:0
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.accordian-list{
+    margin: 1vmin 0;
 }
+.card-opened{
+    color:green;
+    background-color: blue;
+}
+.input-labels{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1vw;
+    font-weight: 700;
+}
+.select-labels{
+    width: -moz-available;         
+    width: -webkit-fill-available; 
+    width: stretch;
+    height: 4vmin;
+    padding: 1px 5px;}
+.date-labels{
+    width: -moz-available;         
+    width: -webkit-fill-available; 
+    width: stretch;
+    height: 4vmin;
+}
+.counter{
+    border:1px solid #bdbebf;
+    width: fit-content;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.counter-span{
+    padding:  0 1vw;
+    font-size: 0.95rem;
+    width: 2.5vmax;
+
+}
+.counter-button{
+    border:none;
+    font-size: 1.2rem;
+    background-color: #e3e3e3;
+    color:#0099ff;
+    height: 3.5vmin;
+    width: 2vmax;
+}
+.search-now{
+    width: -moz-available;         
+    width: -webkit-fill-available; 
+    width: stretch; 
+    height:5vmin;
+    color:#0099ff;
+    font-weight: 700;
+    border:none;
+}
+.disabled-option{
+    color:rgb(211, 206, 206);
+}
+.not-expanded{
+    color:#0099ff !important;
+    font-weight: 700;
+}
+.expanded{
+    font-weight: 700;
+    border-style: solid !important;
+    border-width: 0 0 2px  0  !important;
+    border-color:#bdbebf !important;
+    margin-bottom: 0;
+}
+thead{
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color:#0099ff ;
+    position:sticky;
+    top:0;
+}
+td{
+    line-height: 0.1 !important;
+    padding: 5px 7px !important;
+}
+th{
+    padding: 16px 7px !important;
+    font-weight: 900 !important;
+}
+.flights-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-weight: 700;
+    background-color: #fff;
+}
+.flights{
+    padding-left:1vmax ;
+}
+.flights-button{
+    height: 5vmin;
+    width:5vmax;
+    border:none;
+    color: #0099ff;
+    font-weight: 700;
+}
+.selected{
+    background-color: #0099ff;
+    color: #fff;
+}
+.bullet-green{
+    color: #00d977;
+    font-weight: 900;
+
+}
+.bullet-blue{
+    color:#00b1d9;
+    font-weight: 900;
+}
+.bullet-red{
+    color:#d90048;
+    font-weight: 900;
+}
+::marker{
+
+    font-size: 1.5em !important;
+}
+.no-flights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color:#efefef;
+}
+.table-wrapper {
+    height: 80vh;
+    overflow-y: scroll;
+}
+.navbar{
+    height: 7vh;
+    background-color: #fff;
+    margin-bottom:2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:900 ;
+}
+.navbar-heading{
+    padding-left: 1vw;
+}
+.navbar-icons{
+    padding: 0 1.5vw !important;
+}
+.notifications {
+    color: black;
+    display: inline-block; 
+    position: relative; 
+    padding: 2px 5px; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .notification-badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+    border-radius: 1vw !important;
+    width: 7px;
+    padding: 1px 3px;
+    font-size: 10px;
+    position: absolute; 
+    top: 0;
+    right: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
